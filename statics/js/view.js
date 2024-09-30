@@ -1,4 +1,17 @@
 function navigationMenu()
 {
+    return /*HTML*/`
+    <button onclick ="modal.app.page='search'">Search </button>
+    <button onclick="modal.app.page='Pushview'"> Push a new person</button>
+    <button onclick="modal.app.page='confirmation'"> Remove a person </button>
+    `;
+}
 
+function findObject(id, arrays) {
+    /* Finds an object in a object*/
+    for (let array of arrays)
+    {
+        if (id == array.id) return person;
+    }
+    return null;
 }

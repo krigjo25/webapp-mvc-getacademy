@@ -9,14 +9,14 @@ function searchView()
     <div>
     Søkeresultater : 
     <ul>
-        ${searchResult()}
+        ${tableView()}
     </ul>
     </div>
     `;
     
 }
 
-function searchResult()
+function tableView()
 {
     //  Initialize variables
     let html = ``;
@@ -37,7 +37,10 @@ function searchResult()
 
         //  Create html
         html += /*HTML*/` 
-        <li>${people[i].name} ${people[i].email}</li>
+        <li>
+        ${person.name} 
+        ${person.email} 
+        <button onclick="confirmDeletion(${person.id})">X</button></li>
         
         `;
 
