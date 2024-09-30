@@ -1,0 +1,4 @@
+function confirm_deletion()
+{
+
+}
