@@ -11,8 +11,8 @@ function confirmView()
 
 function getObjects()
 {
-    const id = model.inputs.confirmdeletion.id;
-    const object = findObject(id);
+    const id = modal.inputs.confirm.id;
+    const object = findObject(id, modal.people);
     return /*HTML*/ `
         <dl>
             <dt>Name</dt>

@@ -1,6 +1,6 @@
 function confirmDeletion(id)
 {
-    modal.app.page = 'delete';
+    modal.app.currentpage = 'confirm';
     modal.inputs.confirm.id = id;
     updateview();
     

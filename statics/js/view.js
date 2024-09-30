@@ -9,9 +9,11 @@ function navigationMenu()
 
 function findObject(id, arrays) {
     /* Finds an object in a object*/
+    console.log(arrays)
     for (let array of arrays)
     {
-        if (id == array.id) return person;
+        console.log(array)
+        if (id == array.id) return array;
     }
     return null;
 }
