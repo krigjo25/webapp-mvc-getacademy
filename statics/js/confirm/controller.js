@@ -1,7 +1,6 @@
 function confirm_deletion()
 {
-    console.log(modal.inputs.confirm.confirmation)
-    if (modal.inputs.confirm.confirmation == true)
+    if (modal.inputs.confirm.confirmation)
     {    
         
         modal.people.splice(findIndex(modal.inputs.confirm.id), 1);

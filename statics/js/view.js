@@ -27,6 +27,7 @@ function findIndex(id)
     }
 }
 
+
 function getObjects(label,label1)
 {
     const id = modal.inputs.confirm.id;
@@ -37,5 +38,15 @@ function getObjects(label,label1)
             <dd>${object.name}</dd>
             <dt>${label1}</dt>
             <dd>${object.email}</dd>    
-        </dl>`
+        </dl>`;
+}
+
+function modifyObject()
+{
+    return /*HTML*/ `
+        Name
+        <input type="text" value= "${modal.inputs.modify.name}" 
+        oninput="modal.inputs.modify.name = this.value">
+        email
+        <input type="text" value= "${modal.inputs.modify.email}" oninput="modal.inputs.email = this.value">`;
 }

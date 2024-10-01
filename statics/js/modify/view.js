@@ -4,6 +4,7 @@ function modifyView()
     ${navigationMenu()}
     
     <h3>Modify a user</h3>
-    ${modifyObjects()}
+    ${modifyObject()}
+    <button onclick="modify()">Save</button>
     `;
 }

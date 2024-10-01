@@ -40,7 +40,7 @@ function tableView()
         <li>
             ${person.name} 
             ${person.email}
-            <button onclick="modifyObject(${person.id})">Modify user</button>
+            <button onclick="prepareobject(${person.id})">Modify user</button>
             <button onclick="confirmDeletion(${person.id})">X</button>
         </li>
         
