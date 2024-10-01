@@ -12,10 +12,7 @@ function confirmView()
 function getObjects()
 {
     const id = modal.inputs.confirm.id;
-    console.log("id", id)
-    console.log("modal", modal.people)
     const object = findObject(id, modal.people);
-    console.log("object",object);
     return /*HTML*/ `
         <dl>
             <dt>Name</dt>

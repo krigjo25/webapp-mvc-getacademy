@@ -10,11 +10,10 @@ function navigationMenu()
 
 function findObject(id, arrays) {
     /* Finds an object in a object*/
-
+    console.log('id', id, "aray", arrays)
     for (let array of arrays)
     {
         if (id == array.id) return array;
-        console.log("array id", array.id, "id", id)
     }
     return null;
 }
