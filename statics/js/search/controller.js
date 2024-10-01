@@ -21,5 +21,8 @@ function prepareobject(id)
     console.log(modal.inputs.modify.id )
     updateview();
 }
-
+function createObject()
+{
+    return
+}
 

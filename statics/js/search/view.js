@@ -3,9 +3,10 @@ function searchView()
     document.getElementById('app').innerHTML = /*HTML*/`
     ${navigationMenu()}
     <h1> Search </h1>
+    
     <input type="text" oninput="modal.inputs.search.text=this.value" value=${modal.inputs.search.text || ''}>
     <button onclick="updateview()">Search</button>
-    
+        
     <div>
     Søkeresultater : 
     <ul>
@@ -23,13 +24,14 @@ function tableView()
     let people = modal.people
     const search = modal.inputs.search.text;
 
+    
     //  Ensure input has a value
     if (modal.inputs.search.text != "")
     {
         //  Filter people by given input
         people = filter(search, people)
     }
-
+    
     for (let i = 0; i < people.length; i++)
     {
         //  Initialize a person variable
