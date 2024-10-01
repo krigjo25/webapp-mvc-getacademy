@@ -39,7 +39,8 @@ function tableView()
         html += /*HTML*/` 
         <li>
         ${person.name} 
-        ${person.email} 
+        ${person.email}
+        <button onclick="modifyArray(${person.id})">Edit</button></li>
         <button onclick="confirmDeletion(${person.id})">X</button></li>
         
         `;

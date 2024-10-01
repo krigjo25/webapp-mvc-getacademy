@@ -19,6 +19,11 @@ const modal = {
             confirmation: false,
             
 
+        },
+        modify: {
+            id: null,
+            name:"",
+            email:"",
         }
     },
 
