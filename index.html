@@ -7,9 +7,12 @@
         <title>Name and epost register</title>
         <script src="statics/js/modal.js"></script>
         <script src="statics/js/view.js"></script>
+        <script src="statics/js/modify/view.js"></script>
         <script src="statics/js/create/view.js"></script>
         <script src="statics/js/search/view.js"></script>
         <script src="statics/js/confirm/view.js"></script>
+        <script src="statics/js/modify/view.js"></script>
+        <script src="statics/js/modify/controller.js"></script>
         <script src="statics/js/create/controller.js"></script>
         <script src="statics/js/search/controller.js"></script>
         <script src="statics/js/confirm/controller.js"></script>
@@ -37,6 +40,10 @@
             else if (page == "confirm")
             {
                 confirmView();
+            }
+            else if (page == 'modify')
+            {
+                modifyView();
             }
 
         }

@@ -2,7 +2,8 @@ function navigationMenu()
 {
     return /*HTML*/`
     <button onclick="modal.app.currentpage='search'">Search</button>
-    <button onclick="modal.app.currentpage='Pushview'"> Push a new person</button>
+    <button onclick="modal.app.currentpage='pushview'"> Push a new person</button>
+    <button onclick="modal.app.currentpage='modify'">Modify a person</button>
     <button onclick="modal.app.currentpage='confirmation'"> Remove a person </button>
     `;
     
@@ -10,7 +11,7 @@ function navigationMenu()
 
 function findObject(id, arrays) {
     /* Finds an object in a object*/
-    console.log('id', id, "aray", arrays)
+
     for (let array of arrays)
     {
         if (id == array.id) return array;
@@ -24,4 +25,17 @@ function findIndex(id)
     {
         if (modal.people[i].id == id) return i;
     }
+}
+
+function getObjects(label,label1)
+{
+    const id = modal.inputs.confirm.id;
+    const object = findObject(id, modal.people);
+    return /*HTML*/ `
+        <dl>
+            <dt>${label}</dt>
+            <dd>${object.name}</dd>
+            <dt>${label1}</dt>
+            <dd>${object.email}</dd>    
+        </dl>`
 }

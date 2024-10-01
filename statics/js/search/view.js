@@ -38,10 +38,11 @@ function tableView()
         //  Create html
         html += /*HTML*/` 
         <li>
-        ${person.name} 
-        ${person.email}
-        <button onclick="modifyArray(${person.id})">Edit</button></li>
-        <button onclick="confirmDeletion(${person.id})">X</button></li>
+            ${person.name} 
+            ${person.email}
+            <button onclick="modifyObject(${person.id})">Modify user</button>
+            <button onclick="confirmDeletion(${person.id})">X</button>
+        </li>
         
         `;
 
