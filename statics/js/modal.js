@@ -21,7 +21,11 @@ const modal = {
 
         }
     },
+
     // Data
-    people: [{id:1, name: "Jhon Doe", email: "JhonDoe@demo.com"}, {id:2,name: "Jhon Doe", email: "JhonDoe@demo.com"}],
+    people: [
+            {id:1, name: "Jhon Doe", email: "JhonDoe@demo.com"}, 
+            {id:2,name: "Jhon Doe", email: "JhonDoe@demo.com"}
+        ],
 
 }
