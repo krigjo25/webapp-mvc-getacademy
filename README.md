@@ -6,4 +6,4 @@ Pages
 -   Deletion page
 -   add page
 
-Created with Create Read Update Delete
+Created as a codealong with terje Kolderup.
